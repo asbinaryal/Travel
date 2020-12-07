@@ -1,0 +1,200 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="tour.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title> Mero Yatra </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+  </asp:ContentPlaceHolder>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <link href="css/Custome.css" rel="stylesheet" />
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+     
+</head>
+<body>
+   <form id="form1" runat="server">
+        <div>
+
+                    <div class="nav navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">  
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="height: 34px; width: 59px"> 
+                        <span class="auto-style1">Toggle Navigation</span>
+                        <span class="icon-bar"> </span>
+                        <span class="icon-bar"> </span>
+                        <span class="icon-bar"> </span>
+                        </button>
+                        <a class="navbar-brand" href="WebForm1.aspx"><span> <img src="icon/logo.jfif" alt="Hamro Yatra" height="30" /></span>Your Travel Begins.... </a>
+ 
+
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                           <li class="active"><a href="WebForm1.aspx">Home</a></li>
+                            <li ><a href="#">About</a></li>
+                             <li ><a href="#">Contact</a></li>
+                             <li ><a href="#">Blog</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Package<b class="caret"></b></a>
+                                 <ul class="dropdown-menu " >
+                                     <li class="dropdown-header">Domestic</li>
+                                     <li role="separator" class="divider"></li>
+                                     <li ><a href="#">Pokhara</a></li>
+                                     <li ><a href="#">Chitwan</a></li>
+                                     <li ><a href="#">Lumbini</a></li>
+
+                                     <li role="separator" class="divider"></li>
+                                     <li class="dropdown-header">International</li>
+                                     <li role="separator" class="divider"></li> 
+                                     <li ><a href="#">Bali</a></li>
+                                     <li ><a href="#">Thailand</a></li>
+                                     <li ><a href="#">China</a></li>
+
+                                     <li role="separator" class="divider"></li>
+                                     <li class="dropdown-header">Religious</li>
+                                     <li role="separator" class="divider"></li>
+                                     <li class="dropdown-header">Inside Country</li>
+                                     <li ><a href="#">Goralhkali</a></li>
+                                     <li ><a href="#">CG Dham</a></li>
+                                     <li ><a href="#">Muktinath</a></li>
+                                     <li class="dropdown-header">Outside Country</li>
+                                     <li ><a href="#">Haridduhar</a></li>
+                                     <li ><a href="#">Kashi</a></li>
+                                     <li ><a href="#">Kanya-kumari</a></li>
+
+
+
+
+
+                                 </ul>
+                                </li>
+                                <li >
+                                    <asp:Button ID="btnlogout" CssClass="btn btn-default navbar-btn" runat="server" Text="Sign Out"   PostBackUrl="~/WebForm1.aspx" />
+                                    
+                                </li>
+                        </ul>
+              </div>
+                    </div>
+                </div>
+
+
+             <div class="container-fluid">
+  <div class="row content" style="margin-right: 1006px; width: 173px;">
+    <div class="auto-style3">
+
+        <br /><br /><br /><br /><br /><br /><br />
+
+      <h4>&nbsp;</h4>
+      <ul class="nav nav-pills nav-stacked" style="height: 205px"  >
+         
+             
+        <li class="auto-style6"><a href="Adminhp.aspx" >Dashboard</a></li>
+        <li class="auto-style5"><a href="viewallpackage.aspx" class="auto-style13"  >View Packages</a></li>
+        <li class="auto-style2"><a href="user.aspx" class="auto-style12" >Users</a></li>
+        <li class="auto-style11"><a href="agency.aspx" >View Agency</a></li>
+
+
+
+      </ul>
+        
+       
+    </div>
+
+    </div>
+          </div>
+        </div>
+
+
+
+            <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+                <style type="text/css">
+
+
+
+
+        .auto-style2 {
+            left: -9px;
+            top: -39px;
+            width: 134px;
+                        height: 52px;
+                    }
+        .auto-style3 {
+            left: 0px;
+            top: 0px;
+        }
+        .auto-style5 {
+            left: -30px;
+            top: 55px;
+            width: 172px;
+        }
+        .auto-style6 {
+            left: -8px;
+            top: -72px;
+            height: 40px;
+        }
+                    .auto-style11 {
+                        left: -12px;
+                        top: -157px;
+                        width: 140px;
+                    }
+                    .auto-style12 {
+                        left: 2px;
+                        top: -7px;
+                        margin-top: 0px;
+                    }
+                    .auto-style13 {
+                        left: -3px;
+                        top: 2px;
+                    }
+                </style>
+            </asp:ContentPlaceHolder>
+
+
+        </div>
+    </form>
+
+     <!--footer starts here-->
+ <hr/>
+    <footer>
+            <div class="container">
+                <p class="pull-right"><a href="#">Back to top                >&copy;hamroyatra.com &middot; href="WebForm1.aspx">Home a>&middot;<a href="#">About</a>&middot;<a href="#">Contact</a>&middot;<a href="#">Package </a> </p>
+                </div>
+              </footer>
+     <!--footer ends here-->
+</body>
+</html>
